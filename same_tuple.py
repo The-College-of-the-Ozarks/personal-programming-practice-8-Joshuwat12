@@ -5,9 +5,18 @@
 # Outputs True if all elements of the tuple are the same, False otherwise.
 
 
-# TODO: COMPLETE THIS DEFINITION
+#Function
 def isConstant(t):
-    pass
+  if len(t) < 1:
+    return True
+
+  value = t[0]
+  for v in t[1:]:
+    if v != value:
+      return False
+
+  return True
+    
 
 
 

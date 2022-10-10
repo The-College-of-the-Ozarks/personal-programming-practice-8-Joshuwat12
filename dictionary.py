@@ -5,13 +5,22 @@
 # Outputs the key paired with the max value and the key paired with the min value in the dictionary.
 
 
-# TODO: COMPLETE THIS DEFINITION
+# Functions
 def maxVal(d):
-    pass
+  maxKey = None
+  maxValue = None
+  for key in d:
+    if maxValue == None or d[key] > maxValue:
+      maxKey, maxValue = key, d[key]
+  return maxKey
 
-# TODO: COMPLETE THIS DEFINITION
 def minVal(d):
-    pass
+  minKey = None
+  minValue = None
+  for key in d:
+    if minValue == None or d[key] < minValue:
+      minKey, minValue = key, d[key]
+  return minKey
 
 
 # Dictionary containing three pre-defined dictionaries
